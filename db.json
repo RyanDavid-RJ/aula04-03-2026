@@ -3,9 +3,21 @@
     {
       "id": 1,
       "login:": "admin",
-      "senha": "1234",
+      "senha": "1234"
+    },
+    {
       "id": 2,
       "login:": "user",
+      "senha": "4321"
+    },
+    {
+      "id": 3,
+      "login:": "leonardo",
+      "senha": "1234"
+    },
+    {
+      "id": 4,
+      "login:": "jardim",
       "senha": "4321"
     }
   ]
