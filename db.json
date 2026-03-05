@@ -2,23 +2,23 @@
   "usuario": [
     {
       "id": 1,
-      "login:": "admin",
+      "login": "admin",
       "senha": "1234"
     },
     {
       "id": 2,
-      "login:": "user",
+      "login": "user",
       "senha": "4321"
     },
     {
       "id": 3,
-      "login:": "leonardo",
-      "senha": "1234"
+      "login": "leonardo",
+      "senha": "5678"
     },
     {
       "id": 4,
-      "login:": "jardim",
-      "senha": "4321"
+      "login": "jardim",
+      "senha": "8765"
     }
   ]
 }
