@@ -1,24 +1,40 @@
 {
   "usuario": [
     {
-      "id": 1,
+      "id": "1",
       "login": "admin",
       "senha": "1234"
     },
     {
-      "id": 2,
+      "id": "2",
       "login": "user",
       "senha": "4321"
     },
     {
-      "id": 3,
+      "id": "3",
       "login": "leonardo",
       "senha": "5678"
     },
     {
-      "id": 4,
+      "id": "4",
       "login": "jardim",
       "senha": "8765"
+    },
+    {
+      "id": "27a6",
+      "login": "mauro",
+      "senha": "filho"
+    },
+    {
+      "id": "dede",
+      "login": "marcos",
+      "senha": "frota"
+    },
+    {
+      "id": "7606",
+      "login": "jerri ",
+      "senha": "adriani"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

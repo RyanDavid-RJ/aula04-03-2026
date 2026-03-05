@@ -20,9 +20,13 @@ function Login() {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     setMensagemErro('');
-
+    if (loginDigitado === '' || senhaDigitada === '') {
+      setMensagemErro('Por favor, preencha todos os campos!');
+      return; // 
+    }
     try {
       const resposta = await fetch('http://localhost:3020/usuario');
+      // ... (o resto continua igual)
       const listaDeUsuarios = await resposta.json();
 
       const usuarioEncontrado = listaDeUsuarios.find(
@@ -45,23 +49,23 @@ function Login() {
       <h1>Login</h1>
 
       <form onSubmit={handleLoginSubmit}>
-          <label htmlFor="login">Login: </label>
-          
-          <input
-            id="login"
-            type="text"
-            value={loginDigitado}
-            onChange={validarLogin}
-          />
+        <label htmlFor="login">Login: </label>
 
-          <label htmlFor="senha">Senha: </label>
-          <input
-            id="senha"
-            type="password"
-            value={senhaDigitada}
-            onChange={validarSenha}
-          />
-        
+        <input
+          id="login"
+          type="text"
+          value={loginDigitado}
+          onChange={validarLogin}
+        />
+
+        <label htmlFor="senha">Senha: </label>
+        <input
+          id="senha"
+          type="password"
+          value={senhaDigitada}
+          onChange={validarSenha}
+        />
+
         <button type="submit">Entrar</button>
       </form>
 
